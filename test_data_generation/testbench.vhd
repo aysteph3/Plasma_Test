@@ -47,6 +47,20 @@
              c_alu=> c_alu
        );
 
+
+    --  Test Bench Statements
+    --clock <= not clock after 50 ns;
+     --rst <= '0' after 1 ns;
+
+--clk_process:
+ -- process
+    --begin
+        --clock <= '0';
+        --wait for clk_period/2;  --for 0.5 ns signal is '0'.
+        --clock <= '1';
+        --wait for clk_period/2;  --for next 0.5 ns signal is '1'.
+   --end process;
+
 monitor:
   process
   variable line_v      : line;
