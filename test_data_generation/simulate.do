@@ -4,6 +4,8 @@ vlib work
 vcom "mlite_pack.vhd"
 vcom "my_package.vhd"
 vcom "alu.vhd"
+vcom "mult.vhd"
+vcom "shifter.vhd"
 vcom "testbench.vhd"
 
 # Start simulation

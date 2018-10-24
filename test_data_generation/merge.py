@@ -13,7 +13,7 @@ def delete_line(num):
 
 
 # merge content of file, appending last column in each segment to the first
-def mergefile(filen):
+def mergefile(filen, outputfile):
   try:
      f = open(filen,'r')
   except Exception as e:
@@ -44,7 +44,7 @@ def mergefile(filen):
           firstPass = False
 
   f.close()
-  out = open('sim_generated_file/output.txt', 'w')
+  out = open(outputfile, 'w')
   for line in lines:
       #print line[0:35]
       out.write(line[5:] + "\n")

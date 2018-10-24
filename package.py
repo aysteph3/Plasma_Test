@@ -300,13 +300,21 @@ related_functions = {
 						#"12_26"  	: "11111111111111111111111111111110",
 						#"25_26"  	: "00000000000000000000000000000000",
 						#"27_26"  	: "11111111111111111111111111111110",
-						"*_2"  	: "00000000000000000000000000000000",
-						"*_5"  	: "00000000000000000000000000000001",
-						"*_6"  	: "00000000000000000000000000000001",
-						"7_1"  	: "00000000000000000000000000000000",
-						"1_8"  	: "00000000000000000000000000000000",
-						"7_8"  	: "00000000000000000000000000000000",
-						"7_9"  	: "00000000000000000000000000000000",
+						"*_1"  	: "00000000000000000000000000000000",
+                                                "3_2"  	: "11111111111111111111111111111110",
+                                                "6_2"  	: "11111111111111111111111111111110",
+                                                "8_2"  	: "11111111111111111111111111111110",
+                                                "2_3"  	: "11111111111111111111111111111110",
+                                                "6_3"  	: "11111111111111111111111111111110",
+                                                "8_3"  	: "11111111111111111111111111111110",
+						"*_4"  	: "00000000000000000000000000000001",
+                                                "*_5"  	: "00000000000000000000000000000001",
+						"6_7"  	: "00000000000000000000000000000000",
+                                                "2_8"  	: "11111111111111111111111111111110",
+                                                "3_8"  	: "11111111111111111111111111111110",
+						"6_8"  	: "00000000000000000000000000000000",
+                                                "*_9"  	: "01111111111111111111111111111111",
+						
 						#"2_28"  	: "01111111111111111111111111111111",
 						#"3_28"  	: "01111111111111111111111111111111",
 						#"4_28"  	: "01111111111111111111111111111111",
@@ -334,7 +342,7 @@ related_functions = {
 						#"26_28"  	: "01111111111111111111111111111111",
 						#"27_28"  	: "01111111111111111111111111111110",
 }
-
+#This works if fault simulating 
 pre_determinde_patterns = {
 							"F1" : [1, 2, 6, 4, 7],
 							"F2" : [1, 2, 3, 4, 7, 9, 13, 11, 16],
@@ -358,9 +366,9 @@ test_subset = False
 #test_only_list = [1,2,3,4,5,6,7,8,9,10,17,18,19,20,21,23,24,25,26]
 #test_only_list = [13,16]
 #test_only_list = [11,12,14,15,22]
-test_only_list = [8,13,22]
+#test_only_list = [8,13,22]
 
-generated_files_folder = "../generated_files"
+generated_files_folder = "generated_files"
 data_width  = 32
 
 def run_scanning_optimization(scanning_test_f1, function_dict, func_id_1, debug, verbose, list_of_necessary_patterns):
@@ -570,10 +578,10 @@ def parse_program_arg(arguments, generated_files_folder):
 		print "\n     Copyright (C) 2017 Siavoosh Payandeh Azad, Stephen Oyeniran \n"
 		print "This program optimizes test patterns generation between different functions"
 		print "program arguments:"
-		print "-i [file name]: spcifies the path to the input file"
-		print "-ot [file name]: spcifies the path to the generated table file"
-		print "-ost [file name]: spcifies the path to the generated table file for scanning test"
-		print "-op [file name]: spcifies the path to the generated patterns file"
+		print "-i [file name]: specifies the path to the input file"
+		print "-ot [file name]: specifies the path to the generated table file"
+		print "-ost [file name]: specifies the path to the generated table file for scanning test"
+		print "-op [file name]: specifies the path to the generated patterns file"
 		print "-rfr: redundant function reduction, if used, will use the table in package file to ingore the redundency"
 		print "-v: makes it more verbose"
 		print "-dw [data width]: data width of the patterns, default is 8"

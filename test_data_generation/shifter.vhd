@@ -15,7 +15,7 @@ use ieee.std_logic_1164.all;
 use work.mlite_pack.all;
 
 entity shifter is
-   generic(shifter_type : string := "DEFAULT");
+   --generic(shifter_type : string := "DEFAULT");
    port(value        : in  std_logic_vector(31 downto 0);
         shift_amount : in  std_logic_vector(4 downto 0);
         shift_func   : in  shift_function_type;
@@ -47,18 +47,18 @@ begin
    shift8R  <= fills(31 downto 24) & shift4R(31 downto 8)  when shift_amount(3) = '1' else shift4R;
    shift16R <= fills(31 downto 16) & shift8R(31 downto 16) when shift_amount(4) = '1' else shift8R;
 
-GENERIC_SHIFTER: if shifter_type = "DEFAULT" generate
+--GENERIC_SHIFTER: if shifter_type = "DEFAULT" generate
    c_shift <= shift16L when shift_func = SHIFT_LEFT_UNSIGNED else
               shift16R when shift_func = SHIFT_RIGHT_UNSIGNED or
 				                shift_func = SHIFT_RIGHT_SIGNED else
               ZERO;
-end generate;
+--end generate;
 
-AREA_OPTIMIZED_SHIFTER: if shifter_type /= "DEFAULT" generate
-   c_shift <= shift16L when shift_func = SHIFT_LEFT_UNSIGNED else (others => 'Z');
-   c_shift <= shift16R when shift_func = SHIFT_RIGHT_UNSIGNED or 
-                            shift_func = SHIFT_RIGHT_SIGNED else (others => 'Z');
-   c_shift <= ZERO     when shift_func = SHIFT_NOTHING else (others => 'Z');
-end generate;
+--AREA_OPTIMIZED_SHIFTER: if shifter_type /= "DEFAULT" generate
+--   c_shift <= shift16L when shift_func = SHIFT_LEFT_UNSIGNED else (others => 'Z');
+--   c_shift <= shift16R when shift_func = SHIFT_RIGHT_UNSIGNED or
+--                            shift_func = SHIFT_RIGHT_SIGNED else (others => 'Z');
+--   c_shift <= ZERO     when shift_func = SHIFT_NOTHING else (others => 'Z');
+--end generate;
 
 end; --architecture logic

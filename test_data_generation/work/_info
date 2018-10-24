@@ -10,7 +10,7 @@ cModel Technology
 Z0 d/home/stephen/from_karl/a/PlasmaTesting/test_data_generation
 Ealu
 Z1 w1521123797
-Z2 DPx4 work 10 mlite_pack 0 22 DO<eSeXhEllOGD@RXkS;[1
+Z2 DPx4 work 10 mlite_pack 0 22 6lzG`]V4:Ln;;h95TNPk:1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
@@ -22,9 +22,9 @@ VSFEzFBel`M_gIJaGmC@g;2
 !s100 R_McTV6XQ]f?WP4hnI9IY0
 Z7 OL;C;10.5c;63
 32
-Z8 !s110 1539700981
+Z8 !s110 1540315065
 !i10b 1
-Z9 !s108 1539700981.000000
+Z9 !s108 1540315065.000000
 Z10 !s90 -reportprogress|300|alu.vhd|
 Z11 !s107 alu.vhd|
 !i113 1
@@ -50,22 +50,22 @@ R12
 Pmlite_pack
 R3
 R4
-R1
+Z13 w1540229654
 R0
-Z13 8mlite_pack.vhd
-Z14 Fmlite_pack.vhd
+Z14 8mlite_pack.vhd
+Z15 Fmlite_pack.vhd
 l0
 L15
-VDO<eSeXhEllOGD@RXkS;[1
-!s100 4fbM@PQCgT^Ah[H9hJ>:g2
+V6lzG`]V4:Ln;;h95TNPk:1
+!s100 oDg>oEYzE_TDjY5i7WKa:1
 R7
 32
 b1
 R8
 !i10b 1
 R9
-Z15 !s90 -reportprogress|300|mlite_pack.vhd|
-Z16 !s107 mlite_pack.vhd|
+Z16 !s90 -reportprogress|300|mlite_pack.vhd|
+Z17 !s107 mlite_pack.vhd|
 !i113 1
 R12
 Bbody
@@ -81,19 +81,62 @@ R7
 R8
 !i10b 1
 R9
-R15
 R16
+R17
+!i113 1
+R12
+Emult
+Z18 w1540302666
+R2
+Z19 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z20 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R3
+R4
+R0
+Z21 8mult.vhd
+Z22 Fmult.vhd
+l0
+L45
+VcB8Yg>NYARMTYMNEO_07A0
+!s100 7PaUnOl?:L0D6jPcj0]P02
+R7
+32
+R8
+!i10b 1
+R9
+Z23 !s90 -reportprogress|300|mult.vhd|
+Z24 !s107 mult.vhd|
+!i113 1
+R12
+Alogic
+R2
+R19
+R20
+R3
+R4
+DEx4 work 4 mult 0 22 cB8Yg>NYARMTYMNEO_07A0
+l74
+L55
+VlL:GLM3XN=I@15K;zDXOn3
+!s100 OEWDezLcc3fQ0n@G[MlGN1
+R7
+32
+R8
+!i10b 1
+R9
+R23
+R24
 !i113 1
 R12
 Pmy_package
-Z17 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
-Z18 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z25 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z26 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R3
 R4
 R1
 R0
-Z19 8my_package.vhd
-Z20 Fmy_package.vhd
+Z27 8my_package.vhd
+Z28 Fmy_package.vhd
 l0
 L9
 V8Q[1AW:N;e6K>[c8I10U11
@@ -104,14 +147,14 @@ b1
 R8
 !i10b 1
 R9
-Z21 !s90 -reportprogress|300|my_package.vhd|
-Z22 !s107 my_package.vhd|
+Z29 !s90 -reportprogress|300|my_package.vhd|
+Z30 !s107 my_package.vhd|
 !i113 1
 R12
 Bbody
-Z23 DPx4 work 10 my_package 0 22 8Q[1AW:N;e6K>[c8I10U11
-R17
-R18
+Z31 DPx4 work 10 my_package 0 22 8Q[1AW:N;e6K>[c8I10U11
+R25
+R26
 R3
 R4
 l0
@@ -123,22 +166,61 @@ R7
 R8
 !i10b 1
 R9
-R21
-R22
+R29
+R30
 !i113 1
 R12
-Etestbench
-Z24 w1539700249
+Eshifter
+Z32 w1540229636
 R2
-R23
-R17
-Z25 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
-R18
 R3
 R4
 R0
-Z26 8testbench.vhd
-Z27 Ftestbench.vhd
+Z33 8shifter.vhd
+Z34 Fshifter.vhd
+l0
+L17
+V5@Nkafmj52jP3dOGmD_Hl1
+!s100 ;=aL0jGV]CYC@in35615R0
+R7
+32
+R8
+!i10b 1
+R9
+Z35 !s90 -reportprogress|300|shifter.vhd|
+Z36 !s107 shifter.vhd|
+!i113 1
+R12
+Alogic
+R2
+R3
+R4
+DEx4 work 7 shifter 0 22 5@Nkafmj52jP3dOGmD_Hl1
+l34
+L25
+V4E>zSm?Pk]j53O9L77V@M2
+!s100 0@=YkkIUA1AWYoGNW^jl@2
+R7
+32
+R8
+!i10b 1
+R9
+R35
+R36
+!i113 1
+R12
+Etestbench
+Z37 w1540315057
+R2
+R31
+R25
+Z38 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R26
+R3
+R4
+R0
+Z39 8testbench.vhd
+Z40 Ftestbench.vhd
 l0
 L13
 VV;D23j88Ihe=H@0X=_`KD2
@@ -148,29 +230,29 @@ R7
 R8
 !i10b 1
 R9
-Z28 !s90 -reportprogress|300|testbench.vhd|
-Z29 !s107 testbench.vhd|
+Z41 !s90 -reportprogress|300|testbench.vhd|
+Z42 !s107 testbench.vhd|
 !i113 1
 R12
 Abehavior
 R2
-R23
-R17
+R31
 R25
-R18
+R38
+R26
 R3
 R4
-Z30 DEx4 work 9 testbench 0 22 V;D23j88Ihe=H@0X=_`KD2
-l39
+Z43 DEx4 work 9 testbench 0 22 V;D23j88Ihe=H@0X=_`KD2
+l63
 L16
-Z31 V?KE3P9[Q=9z@Ri8e=<hM10
-Z32 !s100 ;IVElmJVi2I9d7XoBhG?42
+VDlNCUHU5no]VXh^TJ4jXf3
+!s100 k98^fbIcE8HXHU46^gQmX0
 R7
 32
 R8
 !i10b 1
 R9
-R28
-R29
+R41
+R42
 !i113 1
 R12
