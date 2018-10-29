@@ -65,4 +65,3 @@ def main():
 
 if __name__== "__main__":
   main()
-"sim_generated_file/out.txt"
